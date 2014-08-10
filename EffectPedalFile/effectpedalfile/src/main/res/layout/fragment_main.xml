@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chupaladiego2">
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/menu_icon"
+        android:layout_margin="5dp"/>
+    <!--Top menu buttons-->
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/newSetupButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/pedal_icon"/>
+
+        <kicisoft.effectpedalfile.view.CustomTextView
+            android:gravity="center_vertical"
+            android:id="@+id/newSetupText"
+            custom:customFont="fonts/CFMidnight.ttf"
+            android:layout_toRightOf="@id/newSetupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="New Setup"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/editSetupButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_icon"
+            android:layout_toRightOf="@id/newSetupText"/>
+
+        <kicisoft.effectpedalfile.view.CustomTextView
+            android:gravity="center_vertical"
+            android:id="@+id/editSetupText"
+            custom:customFont="fonts/CFMidnight.ttf"
+            android:layout_toRightOf="@id/editSetupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Edit Setup"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_toRightOf="@id/editSetupText"
+            android:layout_margin="5dp"
+            android:id="@+id/optionsButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/options_icon"/>
+
+        <kicisoft.effectpedalfile.view.CustomTextView
+            android:gravity="center_vertical"
+            android:id="@+id/optionsText"
+            custom:customFont="fonts/CFMidnight.ttf"
+            android:layout_toRightOf="@id/optionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Options"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    <!--Title-->
+    <kicisoft.effectpedalfile.view.CustomTextView
+        android:id="@+id/title"
+        custom:customFont="fonts/CFMidnight.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuContainer"
+        android:text="EFFECT PEDAL FILE"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:shadowColor="#d3d3d3"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"/>
+
+    <!--Description-->
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:shadowColor="#D3d3d3"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique euismod arcu, ut consectetur sem. In consectetur turpis quis euismod sodales."/>
+
+</RelativeLayout>

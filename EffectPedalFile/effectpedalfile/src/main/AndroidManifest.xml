@@ -14,7 +14,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".SetupDetailsActivity_"/>
+        <activity android:name=".EffectDetailsActivity_"/>
         <activity
             android:name=".LoadSetupActivity_"
             android:theme="@style/Theme.Transparent" />

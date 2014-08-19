@@ -11,6 +11,7 @@ import org.androidannotations.annotations.ViewById;
 import kicisoft.effectpedalfile.LoadSetupActivity_;
 import kicisoft.effectpedalfile.MainActivity;
 import kicisoft.effectpedalfile.R;
+import kicisoft.effectpedalfile.EffectDetailsActivity_;
 
 /**
  * Created by Juan on 26/07/2014.
@@ -28,6 +29,7 @@ public class LeftMenuFragment extends Fragment{
     @Click
     void newSetupButton(){
         ((MainActivity)getActivity()).toggleMenu();
+        EffectDetailsActivity_.intent(getActivity()).start();
     }
 
     @Click

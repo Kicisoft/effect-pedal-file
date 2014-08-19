@@ -1,1 +1,1 @@
-include ':app', ':effectpedalfile'
+include ':effectpedalfile'

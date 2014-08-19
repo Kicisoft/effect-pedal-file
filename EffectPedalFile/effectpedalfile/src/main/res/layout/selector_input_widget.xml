@@ -2,20 +2,23 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="200dp">
 
-    <FrameLayout
+    <!--Controller-->
+    <kicisoft.effectpedalfile.SelectorControllerView_
         android:id="@+id/input"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.8"/>
 
+    <!--Label-->
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.2"
-        android:text="Effect Name"
+        android:text="Controller Name"
         android:gravity="center"/>
 
 </LinearLayout>
